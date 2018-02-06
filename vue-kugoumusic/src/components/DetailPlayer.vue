@@ -137,8 +137,10 @@
       toggleStatus(){//歌曲详情页面播放暂停事件
         if (this.isPlay) {
           document.getElementById('audioPlay').pause()
+          $(".detail_player-img").css("animation-play-state", "paused")
         } else {
           document.getElementById('audioPlay').play()
+          $(".detail_player-img").css("animation-play-state", "running")
         }
         this.$store.commit('isPlay', !this.isPlay)
       },
