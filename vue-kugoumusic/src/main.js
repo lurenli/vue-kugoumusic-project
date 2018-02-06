@@ -5,10 +5,10 @@ import {routes} from './router';
 import axios from 'axios';
 import MintUI from 'mint-ui';
 import {store}  from './store/index.js';
-import 'mint-ui/lib/style.css'
-import './assets/css/neat-min.css'
-import './assets/css/style.css'
-import $ from 'jquery'
+import 'mint-ui/lib/style.css';
+import './assets/css/neat-min.css';
+import './assets/css/style.css';
+import $ from 'jquery';
 Vue.prototype.$http = axios
 
 Vue.use(MintUI);
