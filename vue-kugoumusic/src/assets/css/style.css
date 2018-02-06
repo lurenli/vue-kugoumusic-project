@@ -62,7 +62,17 @@ a{text-decoration: none !important;}
 .detail_player-content{position: fixed;width: 100%;height: 100%;top:0;left: 0;background-color: rgba(0,0,0,.5);z-index: 1010}
 .detail_player-title{width: 100%;height: 43px;background: -webkit-linear-gradient(top,rgba(0,0,0,.6),rgba(0,0,0,0));color: #fff;font-size: 18px;text-align: center;line-height: 43px;margin-top: 51px;position: relative}
 .detail_player-back{display: block;float: left;width: 24px;height: 100%;background: url("../images/goback_icon.png") no-repeat center;background-size: 60% 60%;position: absolute;left: 5px;top:0}
-.detail_player-img{width: 50%;margin: 30px auto}
+.detail_player-img{width: 50%;
+   border-radius:50%;
+   overflow:hidden;
+   margin: 30px auto;
+   -webkit-transition-property: -webkit-transform;
+   -webkit-transition-duration: 8s;
+   -webkit-animation: rotate 8s linear infinite;
+   animation: rotate 8s linear infinite;}
+   @-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+    to{-webkit-transform: rotate(360deg)}
+}
 .detail_player-img img{width: 100%;}
 .mt-range-thumb{width: 16px;height: 16px;top:7px}
 .detail_player-time{display: block;width: 10%;height: 30px;float: left;line-height: 30px;color: #fff;font-size: 12px;text-align: center}
